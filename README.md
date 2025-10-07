@@ -26,8 +26,8 @@ The Role Assessment Tool is used during interviews to collect and analyze applic
 - **Private Results**  
   Role suggestions are visible only to the interviewer—not to the applicant.
 
-- **Google Form Integration**  
-  Final results are uploaded via Google Apps Script to a designated Google Form, allowing HR and other interviewers to access and review them later.
+- **Google Sheet Integration**  
+  Final results are uploaded via Google Apps Script to a designated Google Sheet, allowing HR and other interviewers to access and review them later.
 
 ---
 
@@ -35,7 +35,16 @@ The Role Assessment Tool is used during interviews to collect and analyze applic
 
 - **Frontend:** HTML, CSS, JavaScript  
 - **Backend Logic:** JavaScript (Client-side analysis)  
-- **Integration:** Google Apps Script for Google Form submission
+- **Integration:** Google Apps Script for Google Sheet submission
+
+---
+
+## 👥 Contributors
+
+This tool was collaboratively developed by:
+
+- **[John Lynzee Plaza](https://github.com/Jplaz02)** – Led the frontend development and contributed to backend integration and logic refinement.  
+- **[Simon Troy Eligido](https://github.com/xymontroy)** – Focused primarily on backend logic and Google Apps Script integration, ensuring smooth data processing and submission to Google sheet.
 
 ---
 
@@ -44,15 +53,15 @@ The Role Assessment Tool is used during interviews to collect and analyze applic
 1. Interviewer opens the Role Assessment Tool during the interview.  
 2. Applicant fills out the form with their details.  
 3. The system processes the input and determines three matching roles.  
-4. These results are sent to a Google Form using Apps Script.  
-5. HR and interviewers can view the results in the Google Form response sheet.
+4. These results are sent to a Google Sheet using Apps Script.  
+5. HR and interviewers can view the results in the Google Sheet response sheet.
 
 ---
 
 ## 🔒 Access Control
 
 - Applicants do **not** see the role suggestions.  
-- Only interviewers and HR personnel have access to the Google Form results.
+- Only interviewers and HR personnel have access to the Google Sheet results.
 
 ---
 
@@ -60,4 +69,4 @@ The Role Assessment Tool is used during interviews to collect and analyze applic
 
 - This tool is intended for internal use only.  
 - Role matching logic can be customized based on evolving company needs.  
-- Make sure to update the Google Form ID and field mappings in `appsScript.gs` before deployment.
+- Make sure to update the Google Sheet ID and field mappings in `appsScript.gs` before deployment.
